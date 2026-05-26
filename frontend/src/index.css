@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('/images/shecanbackground.jpg');
+  background-size: cover;
+  background-position: 50% 100%;   
+  background-position: center;
+  color: #111;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(10, 10, 12, 0.78);
+  border-radius: 14px;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+
+.form { display:flex; flex-direction:column; gap:12px; }
+label { display:flex; flex-direction:column; font-weight:600; }
+input, textarea { padding:8px; border:1px solid #bababa; border-radius:4px; margin-top:6px; }
+button { padding:10px 14px; border:none; background:#0b74de; color:#fff; border-radius:6px; cursor:pointer; }
+.status { margin-top:12px; font-weight:600; }
+@media (max-width:600px){ .container{ margin:20px; } }
