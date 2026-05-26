@@ -1,36 +1,28 @@
 package com.shecanfoundation.controller;
 
+import com.shecanfoundation.io.FormRequestDto;
+import com.shecanfoundation.io.FormResponseDto;
+import com.shecanfoundation.service.FormService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Collections;
-import java.util.Map;
-
 @RestController
 @RequestMapping("/api/form")
 @CrossOrigin(origins = "http://localhost:5173")
 public class FormController {
 
-    public static class Form {
-        public String name;
-        public String email;
-        public String message;
+    private final FormService formService;
 
-        public Form() {}
-
-        public Form(String name, String email, String message) {
-            this.name = name;
-            this.email = email;
-            this.message = message;
-        }
+    public FormController(FormService formService) {
+        this.formService = formService;
     }
 
     @PostMapping
-    public Map<String, String> submit(@RequestBody Form form) {
-        // Here you could save to a database or send an email.
-        return Collections.singletonMap("message", "Form Submitted Successfully");
+    public FormResponseDto submit(@RequestBody FormRequestDto form) {
+        return formService.submit(form);
     }
 }
+
