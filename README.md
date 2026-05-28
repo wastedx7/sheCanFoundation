@@ -7,6 +7,10 @@ This repository contains a simple contact form application used by the She Can F
 
 ---
 
+<!-- Project screenshots -->
+![Screenshot 58](frontend/images/Screenshot%20(58).png)
+![Screenshot 59](frontend/images/Screenshot%20(59).png)
+
 **Quick summary**
 
 - Backend: runs on port `8080` by default and uses MySQL (configured via environment variables). The backend endpoints are:
