@@ -150,7 +150,6 @@ export default function App() {
               </label>
               <button type="submit">Validate</button>
               {adminStatus && <p className="status">{adminStatus}</p>}
-              <p className="hint">Use credentials: <b>admin</b> / <b>admin123</b></p>
             </form>
           ) : (
             <>
