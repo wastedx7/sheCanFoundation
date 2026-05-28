@@ -28,3 +28,18 @@ input, textarea { padding:8px; border:1px solid #bababa; border-radius:4px; marg
 button { padding:10px 14px; border:none; background:#0b74de; color:#fff; border-radius:6px; cursor:pointer; }
 .status { margin-top:12px; font-weight:600; }
 @media (max-width:600px){ .container{ margin:20px; } }
+
+.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;}
+.tabs{display:flex;gap:10px;}
+.tabs button{background:#1110; border:1px solid rgba(255,255,255,0.25); color:#fff; padding:8px 12px; border-radius:10px; cursor:pointer;}
+.tabs button.active{background:#0b74de; border-color:#0b74de;}
+.admin-actions{margin:10px 0;}
+button.secondary{background:rgba(255,255,255,0.12);}
+.table-wrap{margin-top:16px; overflow:auto;}
+table{width:100%; border-collapse:collapse;}
+th,td{padding:10px; border-bottom:1px solid rgba(255,255,255,0.12); vertical-align:top;}
+th{background:rgba(255,255,255,0.06);}
+.empty{opacity:0.8;}
+td.msg{max-width:420px; word-break:break-word;}
+.hint{margin-top:10px; opacity:0.9; font-size:14px;}
+
